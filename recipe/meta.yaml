@@ -19,10 +19,12 @@ requirements:
     - python <3.13
     - pip
     - ez_setup
+    - setuptools
   run:
     - python <3.13
     - pip
     - requests
+    - setuptools
 
 test:
   imports:
