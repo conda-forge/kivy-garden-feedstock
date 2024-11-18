@@ -1,13 +1,13 @@
 {% set name = "kivy-garden" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c256f42788421273a08fbb0a228f0fb0e80dd86b629fb8c0920507f645be6c72
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Kivy Garden-{{ version }}.tar.gz
+  sha256: 2b8377378e87501d5d271f33d94f0e44c089884572c64f89c9d609b1f86a2748
 
 build:
   noarch: python
@@ -16,12 +16,15 @@ build:
 
 requirements:
   host:
-    - python
+    - python <3.13
     - pip
+    - ez_setup
+    - setuptools
   run:
-    - python
+    - python <3.13
     - pip
     - requests
+    - setuptools
 
 test:
   imports:
