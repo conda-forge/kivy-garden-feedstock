@@ -16,12 +16,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python <3.13
     - pip
-    - ez_setup
-    - setuptools
   run:
-    - python
+    - python <3.13
     - pip
     - requests
 
