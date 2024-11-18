@@ -19,6 +19,7 @@ requirements:
     - python
     - pip
     - ez_setup
+    - setuptools
   run:
     - python
     - pip
