@@ -18,6 +18,7 @@ requirements:
   host:
     - python
     - pip
+    - ez_setup
   run:
     - python
     - pip
